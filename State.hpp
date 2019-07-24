@@ -1,6 +1,6 @@
 #pragma once
 
-namespace flappy {
+namespace game {
     
     class State
     {
