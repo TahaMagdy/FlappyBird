@@ -1,4 +1,5 @@
 #include "GameLoop.hpp"
+#include "SplashState.hpp"
 
 namespace game {
     
@@ -7,7 +8,8 @@ namespace game {
         _data->window.create(sf::VideoMode(width, height),
                              title,
                              sf::Style::Close | sf::Style::Titlebar);
-        // need an init sate
+
+        _data->machine.addState(stateRef(new SplashState(this->_data)));
         this->run();
     } ///
     

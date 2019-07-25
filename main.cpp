@@ -1,7 +1,8 @@
 #include "GameLoop.hpp"
+#include "definitions.hpp"
 
 int main() {
 
-    game:: Game(800, 600, "Hello!");
+    game::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "FlabbyBird");
     
  }
