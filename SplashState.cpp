@@ -2,6 +2,7 @@
 #include <sstream>
 #include <SFML/Graphics.hpp>
 #include "definitions.hpp"
+#include "MainMenuState.hpp"
 #include "SplashState.hpp"
 
 
@@ -41,8 +42,10 @@ namespace game {
     SplashState::update(float dt)
     {
         if(_clock.getElapsedTime().asSeconds() > SPLASH_STATE_SHOW_TIME)
-            std::cout << "Go to main menu\n";
-        
+        {
+            _data->machine.addState(stateRef(new MainMenuState(this->_data)), true);
+
+        }
     } ///
     
     
