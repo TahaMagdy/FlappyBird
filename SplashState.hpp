@@ -1,14 +1,27 @@
-//
-//  SplashState.hpp
-//  FlappyBird
-//
-//  Created by Taha Magdy on 7/25/19.
-//  Copyright © 2019 Taha Magdy. All rights reserved.
-//
+#pragma once
 
-#ifndef SplashState_hpp
-#define SplashState_hpp
+#include <SFML/Graphics.hpp>
+#include "State.hpp"
+#include "GameLoop.hpp"
 
-#include <stdio.h>
 
-#endif /* SplashState_hpp */
+namespace game {
+    
+    class SplashState : public State
+    {
+    private:
+        GameDataRef _data;
+        sf::Clock _clock;
+        sf::Texture _backgroundTexture;
+        sf::Sprite _background;
+        
+    public:
+        SplashState(GameDataRef data);
+        
+        void init();
+        void handleInput();
+        void update(float dt);
+        void draw(float dt);
+    };
+}
+
