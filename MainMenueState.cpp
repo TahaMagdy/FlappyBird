@@ -1,6 +1,8 @@
-#include "MainMenuState.hpp"
-#include "definitions.hpp"
 #include <iostream>
+#include "MainMenuState.hpp"
+#include "GameState.hpp"
+#include "definitions.hpp"
+#include "GameOverState.hpp"
 
 
 namespace game {
@@ -48,8 +50,8 @@ namespace game {
                 _data->window.close();
             
             if (_data->input.isSpriteClicked(_playButton, sf::Mouse::Left, _data->window))
-                std::cout << "Go to the Game State\n";
-                
+                // Go to the Game State
+                _data->machine.addState(stateRef(new GameState(this->_data)), true);
         }
     } ///
     

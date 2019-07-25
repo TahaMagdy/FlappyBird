@@ -19,7 +19,7 @@ namespace game {
     SplashState::init()
     {
         _data->assets.loadTexture("Splash State Background",
-                               SPLASH_SCENCE_BACKGROUND_FILEPATH);
+                               SPLASH_SCENCE_BACKGROUND);
         _background.setTexture(this->_data->assets.getTexture("Splash State Background"));
     } ///
 
