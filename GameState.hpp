@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "State.hpp"
 #include "GameLoop.hpp"
+#include "Pipe.hpp"
 
 
 namespace game {
@@ -12,6 +13,7 @@ namespace game {
     private:
         GameDataRef _data; 
         sf::Sprite _background;
+        Pipe *pipe;
         
     public:
         GameState(GameDataRef data);

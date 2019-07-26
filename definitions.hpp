@@ -9,3 +9,6 @@ const std::string GAME_BACKGROUND = "Resources/res/sky.png";
 const std::string GAME_Over_BACKGROUND = "Resources/res/sky.png";
 const std::string GAME_NAME = "Resources/res/title.png";
 const std::string PLAY_BUTTON = "Resources/res/PlayButton.png";
+const std::string PIPE_UP = "Resources/res/PipeUp.png";
+const std::string PIPE_DOWN = "Resources/res/PipeDown.png";
+const float PIPE_SPEED = 200.0f;
