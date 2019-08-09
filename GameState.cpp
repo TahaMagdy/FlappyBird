@@ -44,9 +44,7 @@ namespace game {
             
             if (_data->input.isSpriteClicked(_background, sf::Mouse::Left, _data->window))
             {
-                pipe->spawningInvisiblePipe();
-                pipe->spawningTopPipe();
-                pipe->spawningBottomPipe();
+
             }
         }
         
@@ -57,6 +55,17 @@ namespace game {
     GameState::update(float dt)
     {
         pipe->movePipes(dt);
+        if ( clock.getElapsedTime().asSeconds() > CONST::pipe_spwan_frequency )
+        {
+            // generating pipes
+            pipe->spawningInvisiblePipe();
+            pipe->spawningTopPipe();
+            pipe->spawningBottomPipe();
+            
+            // otherwise the clock will be always larger than the CONST::pipe_spwan_frequency.
+            // and arbitrary number of pipes will be generated
+            clock.restart();
+        }
     } ///
     
     

@@ -1,6 +1,6 @@
 #include "Pipe.hpp"
 #include "definitions.hpp"
-
+#include <iostream>
 namespace game {
     
     Pipe::Pipe(GameDataRef data) : _data(data) { }
@@ -44,11 +44,19 @@ namespace game {
     {
         for (unsigned short int i = 0; i < pipeSprite.size(); i++)
         {
-            sf::Vector2f position = pipeSprite.at(i).getPosition();
-            float movement = CONST::pipe_speed * dt;
-            pipeSprite.at(i).move(-movement, 0);
+            // delete the pipe once it goes of the left bound.
+            if (pipeSprite.at(i).getPosition().x < 0 - pipeSprite.at(i).getGlobalBounds().width)
+                pipeSprite.erase(pipeSprite.begin() + i);
+            else {
+                float movement = CONST::pipe_speed * dt;
+                pipeSprite.at(i).move(-movement, 0);
+            }
+            
+            std::cout << pipeSprite.size() << std::endl;
+
         }
 
+        
         
     } ///
     
