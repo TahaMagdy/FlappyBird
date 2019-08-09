@@ -19,7 +19,7 @@ namespace game {
     GameOverState::init()
     {
         _data->assets.loadTexture("Game Over Background",
-                                  CONST::GAME_Over_BACKGROUND);
+                                  CONST::game_over_background);
         _background.setTexture(this->_data->assets.getTexture("Game Over Background"));
     } ///
     

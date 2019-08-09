@@ -45,7 +45,7 @@ namespace game {
         for (unsigned short int i = 0; i < pipeSprite.size(); i++)
         {
             sf::Vector2f position = pipeSprite.at(i).getPosition();
-            float movement = CONST::PIPE_SPEED * dt;
+            float movement = CONST::pipe_speed * dt;
             pipeSprite.at(i).move(-movement, 0);
         }
 

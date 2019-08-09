@@ -20,10 +20,10 @@ namespace game {
     {
         std::cout << "Game State\n";
         _data->assets.loadTexture("Game Background",
-                                  CONST::GAME_BACKGROUND);
+                                  CONST::game_background);
         
-        _data->assets.loadTexture("Pipe Up", CONST::PIPE_UP);
-        _data->assets.loadTexture("Pipe Down", CONST::PIPE_DOWN);
+        _data->assets.loadTexture("Pipe Up", CONST::pipe_up);
+        _data->assets.loadTexture("Pipe Down", CONST::pipe_down);
         
         pipe = new Pipe(_data);
         

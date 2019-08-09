@@ -3,6 +3,6 @@
 
 int main() {
 
-    game::Game(CONST::SCREEN_WIDTH, CONST::SCREEN_HEIGHT, "FlabbyBird");
+    game::Game(CONST::screen_width, CONST::screen_height, "FlabbyBird");
     
  }

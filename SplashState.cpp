@@ -19,7 +19,7 @@ namespace game {
     SplashState::init()
     {
         _data->assets.loadTexture("Splash State Background",
-                                  CONST::SPLASH_SCENCE_BACKGROUND);
+                                  CONST::splash_scence_background);
         _background.setTexture(this->_data->assets.getTexture("Splash State Background"));
     } ///
 
@@ -41,7 +41,7 @@ namespace game {
     void
     SplashState::update(float dt)
     {
-        if(_clock.getElapsedTime().asSeconds() > CONST::SPLASH_STATE_SHOW_TIME)
+        if(_clock.getElapsedTime().asSeconds() > CONST::splash_state_show_time)
         {
             _data->machine.addState(stateRef(new MainMenuState(this->_data)), true);
 
