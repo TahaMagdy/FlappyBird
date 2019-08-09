@@ -18,22 +18,22 @@ namespace game {
     MainMenuState::init()
     {
         _data->assets.loadTexture("Main Menu Background",
-                                  MAIN_MENU_BACKGROUND);
+                                  CONST::MAIN_MENU_BACKGROUND);
         _data->assets.loadTexture("Game Title",
-                                  GAME_NAME);
+                                  CONST::GAME_NAME);
         _data->assets.loadTexture("Play Button",
-                                  PLAY_BUTTON);
+                                  CONST::PLAY_BUTTON);
         
         _background.setTexture(this->_data->assets.getTexture("Main Menu Background"));
         _title.setTexture(this->_data->assets.getTexture("Game Title"));
         _playButton.setTexture(this->_data->assets.getTexture("Play Button"));
         
-        float x = (SCREEN_WIDTH / 2) - (_title.getGlobalBounds().width / 2);
+        float x = (CONST::SCREEN_WIDTH / 2) - (_title.getGlobalBounds().width / 2);
         float y = _title.getGlobalBounds().height /2;
         _title.setPosition(x, y);
         
-         x = (SCREEN_WIDTH / 2) - (_playButton.getGlobalBounds().width / 2);
-        y = (SCREEN_HEIGHT / 2) - (_playButton.getGlobalBounds().height / 2);
+         x = (CONST::SCREEN_WIDTH / 2) - (_playButton.getGlobalBounds().width / 2);
+        y = (CONST::SCREEN_HEIGHT / 2) - (_playButton.getGlobalBounds().height / 2);
         _playButton.setPosition(x, y);
         
     } ///
