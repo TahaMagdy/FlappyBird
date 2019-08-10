@@ -25,9 +25,11 @@ namespace game {
         _data->assets.loadTexture("Pipe Up", CONST::pipe_up);
         _data->assets.loadTexture("Pipe Down", CONST::pipe_down);
         _data->assets.loadTexture("Land", CONST::land);
+        _data->assets.loadTexture("Bird01", CONST::bird_frame1);
         
         pipe = new Pipe(_data);
         land = new Land(_data);
+        bird = new Bird(_data);
         
         _background.setTexture(this->_data->assets.getTexture("Game Background"));
 
@@ -79,8 +81,10 @@ namespace game {
     {
         _data->window.clear();
         _data->window.draw(_background);
+        
         pipe->drawPipes();
         land->drawLand();
+        bird->draw();
         
         _data->window.display();
     } ///

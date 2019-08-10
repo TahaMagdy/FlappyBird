@@ -5,6 +5,7 @@
 #include "GameLoop.hpp"
 #include "Pipe.hpp"
 #include "Land.hpp"
+#include "Bird.hpp"
 
 namespace game {
     
@@ -12,10 +13,11 @@ namespace game {
     {
     private:
         GameDataRef _data; 
-        sf::Sprite _background;
+        sf::Sprite  _background;
+        sf::Clock   clock;
         Pipe *pipe;
-        sf::Clock clock;
         Land *land;
+        Bird *bird;
         
     public:
         GameState(GameDataRef data);
