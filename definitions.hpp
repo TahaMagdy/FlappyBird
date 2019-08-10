@@ -31,5 +31,6 @@ namespace CONST {
     const float gravity = 350.0f;
     const float flyingSpeed = 350.0f;
     const float flyingDuration = 0.25f;
+    const float rotation_speed = 100.0f;
 }
 

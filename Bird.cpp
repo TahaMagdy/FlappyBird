@@ -21,6 +21,12 @@ namespace game {
         
         // setting the bird inital state
         _birdState = CONST::bird_still;
+        
+        // rotation
+        sf::Vector2f origin = sf::Vector2f(_birdSprite.getGlobalBounds().width/2,
+                                           _birdSprite.getGlobalBounds().height/2);
+        _birdSprite.setOrigin(origin);
+        _rotation = 0;
 
     }///
     
@@ -54,11 +60,32 @@ namespace game {
     {
         // move it down if the state is falling
         if (_birdState == CONST::bird_falling)
+        {
             _birdSprite.move(0, CONST::gravity * dt);
+            
+            // rotation
+            _rotation += CONST::rotation_speed *dt;
+            
+            if (_rotation > 25.0f)
+                _rotation = 25.0f;
+            
+            _birdSprite.setRotation(_rotation);
+        }
+
         
         // move it up if the state is flying
         else if (_birdState == CONST::bird_flying)
+        {
             _birdSprite.move(0, - CONST::flyingSpeed * dt);
+
+            // rotation
+            _rotation -= CONST::rotation_speed *dt;
+            
+            if (_rotation < -25.0f)
+                _rotation = -25.0f;
+            
+            _birdSprite.setRotation(_rotation);
+        }
         
         if (_movementClock.getElapsedTime().asSeconds() > CONST::flyingDuration)
         {

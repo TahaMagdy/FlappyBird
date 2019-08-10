@@ -17,6 +17,8 @@ namespace game {
         unsigned int _animationIterator;
         sf::Clock _clock, _movementClock;
         int _birdState;
+        float _rotation;
+        
         
         
     public:
