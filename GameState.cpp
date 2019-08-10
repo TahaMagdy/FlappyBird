@@ -51,7 +51,7 @@ namespace game {
             
             if (_data->input.isSpriteClicked(_background, sf::Mouse::Left, _data->window))
             {
-
+                bird->tap();
             }
         }
         
@@ -78,6 +78,7 @@ namespace game {
         }
         
         bird->animate(dt);
+        bird->update(dt);
         
     } ///
     

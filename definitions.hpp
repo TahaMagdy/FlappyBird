@@ -25,5 +25,11 @@ namespace CONST {
     const std::string bird_frame3 = path + "bird-03.png";
     const std::string bird_frame4 = path + "bird-04.png";
     const float bird_animation_duration = 0.5f;
+    const int bird_still = 0;
+    const int bird_falling = 1;
+    const int bird_flying = 2;
+    const float gravity = 350.0f;
+    const float flyingSpeed = 350.0f;
+    const float flyingDuration = 0.25f;
 }
 

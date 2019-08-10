@@ -7,14 +7,14 @@
 
 
 namespace game {
- 
-
+    
+    
     SplashState::SplashState(GameDataRef data) : _data(data)
     {
         
     } ///
-
-
+    
+    
     void
     SplashState::init()
     {
@@ -22,7 +22,7 @@ namespace game {
                                   CONST::splash_scence_background);
         _background.setTexture(this->_data->assets.getTexture("Splash State Background"));
     } ///
-
+    
     
     void
     SplashState::handleInput()
@@ -44,7 +44,7 @@ namespace game {
         if(_clock.getElapsedTime().asSeconds() > CONST::splash_state_show_time)
         {
             _data->machine.addState(stateRef(new MainMenuState(this->_data)), true);
-
+            
         }
     } ///
     
@@ -56,6 +56,6 @@ namespace game {
         _data->window.draw(_background);
         _data->window.display();
     } ///
-
-
+    
+    
 }
