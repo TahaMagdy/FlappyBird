@@ -24,5 +24,6 @@ namespace CONST {
     const std::string bird_frame2 = path + "bird-02.png";
     const std::string bird_frame3 = path + "bird-03.png";
     const std::string bird_frame4 = path + "bird-04.png";
+    const float bird_animation_duration = 0.5f;
 }
 

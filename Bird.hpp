@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "definitions.hpp"
 #include "GameLoop.hpp"
+#include <vector>
 
 namespace game {
     
@@ -12,10 +13,14 @@ namespace game {
     private:
         GameDataRef _data;
         sf::Sprite _birdSprite;
+        std::vector<sf::Texture> _animationFrame;
+        unsigned int _animationIterator;
+        sf::Clock _clock;
         
     public:
         Bird(GameDataRef data);
         void draw();
+        void animate(float dt);
     };
     
 }

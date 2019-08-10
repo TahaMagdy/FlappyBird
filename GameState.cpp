@@ -26,6 +26,9 @@ namespace game {
         _data->assets.loadTexture("Pipe Down", CONST::pipe_down);
         _data->assets.loadTexture("Land", CONST::land);
         _data->assets.loadTexture("Bird01", CONST::bird_frame1);
+        _data->assets.loadTexture("Bird02", CONST::bird_frame2);
+        _data->assets.loadTexture("Bird03", CONST::bird_frame3);
+        _data->assets.loadTexture("Bird04", CONST::bird_frame4);
         
         pipe = new Pipe(_data);
         land = new Land(_data);
@@ -73,6 +76,9 @@ namespace game {
             // and arbitrary number of pipes will be generated
             clock.restart();
         }
+        
+        bird->animate(dt);
+        
     } ///
     
     
