@@ -10,7 +10,10 @@ namespace game {
     {
     private:
         GameDataRef _data;
-        std::vector<sf::Sprite> pipesArray;
+        std::vector<sf::Sprite> _pipesArray;
+        
+        int _landHeight;
+        int _pipeOffSetY;
         
     public:
         Pipe(GameDataRef data);
@@ -20,6 +23,7 @@ namespace game {
         void spawningTopPipe();
         void spawningInvisiblePipe();
         void movePipes(float dt);
+        void randmisePipesOffset();
     };
     
 }
