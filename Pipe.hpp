@@ -10,7 +10,7 @@ namespace game {
     {
     private:
         GameDataRef _data;
-        std::vector<sf::Sprite> pipeSprite;
+        std::vector<sf::Sprite> pipesArray;
         
     public:
         Pipe(GameDataRef data);

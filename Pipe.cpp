@@ -53,12 +53,10 @@ namespace game {
             }
             
             // watching the size of the pipe array.
-            // std::cout << pipeSprite.size() << std::endl;
+            // std::cout << pipesArray.size() << std::endl;
 
         }
 
-        
-        
     } ///
     
     
