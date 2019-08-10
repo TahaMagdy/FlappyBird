@@ -29,6 +29,8 @@ namespace game {
         _data->assets.loadTexture("Bird02", CONST::bird_frame2);
         _data->assets.loadTexture("Bird03", CONST::bird_frame3);
         _data->assets.loadTexture("Bird04", CONST::bird_frame4);
+        _data->assets.loadTexture("Scoring Pipe", CONST::scoring_pipe);
+
         
         pipe  = new Pipe(_data);
         land  = new Land(_data);
@@ -38,6 +40,7 @@ namespace game {
         _background.setTexture(this->_data->assets.getTexture("Game Background"));
 
         _gameState = EnumGameState::eReady;
+        _score = 0;
     } ///
     
     
@@ -86,6 +89,7 @@ namespace game {
                 pipe->spawningInvisiblePipe();
                 pipe->spawningTopPipe();
                 pipe->spawningBottomPipe();
+                pipe->spawningScoringPipe();
                 
                 // otherwise the clock will be always larger than the CONST::pipe_spwan_frequency.
                 // and arbitrary number of pipes will be generated
@@ -118,6 +122,27 @@ namespace game {
                     _gameState = EnumGameState::eGameOver;
                 }
             }
+            
+            
+            if (_gameState == EnumGameState::ePlaying)
+            {
+                std::vector<sf::Sprite> &scoringPipe = pipe->getScoringSprites();
+                for (int i = 0; i < scoringPipe.size(); i++)
+                {
+                    if(_collision.checkSpriteCollision(bird->getSprite(),
+                                                       0.625f,
+                                                       scoringPipe.at(i),
+                                                       1.0f))
+                    {
+                        _score++;
+                        std::cout << _score << std::endl;
+                        scoringPipe.erase(scoringPipe.begin() + i );
+                    }
+                }
+            }
+            
+            
+            
         }
         
         if (_gameState == EnumGameState::eGameOver)

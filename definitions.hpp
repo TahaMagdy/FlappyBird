@@ -16,7 +16,8 @@ namespace CONST {
     // pipes
     const std::string pipe_up = path + "pipeup.png";
     const std::string pipe_down = path + "pipedown.png";
-    const float pipe_speed = 100.0f;
+    const std::string scoring_pipe = path + "InvisibleScoringPipe.png";
+    const float pipe_speed = 200.0f;
     const float pipe_spwan_frequency = 2.5f;
     
     // bird

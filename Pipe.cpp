@@ -61,6 +61,23 @@ namespace game {
  
         }
 
+        
+        for (unsigned short int i = 0; i < _scoringPipesArray.size(); i++)
+        {
+            // delete the pipe once it goes of the left bound.
+            if (_scoringPipesArray.at(i).getPosition().x < 0 - _scoringPipesArray.at(i).getGlobalBounds().width)
+                _scoringPipesArray.erase(_scoringPipesArray.begin() + i);
+            else {
+                float movement = CONST::pipe_speed * dt;
+                _scoringPipesArray.at(i).move(-movement, 0);
+            }
+            
+            // watching the size of the pipe array.
+            // std::cout << pipesArray.size() << std::endl;
+            
+        }
+
+        
     } ///
     
     
@@ -82,6 +99,22 @@ namespace game {
     {
         return _pipesArray;
     }
+    
+    std::vector<sf::Sprite>
+    &Pipe::getScoringSprites()
+    {
+        return _scoringPipesArray;
+    }
 
+    void
+    Pipe::spawningScoringPipe()
+    {
+        sf::Sprite sprite(_data->assets.getTexture("Scoring Pipe"));
+        float x = _data->window.getSize().x;
+        sprite.setPosition(x, 0);
+ 
+        _scoringPipesArray.push_back(sprite);
+        
+    } ///
     
 }

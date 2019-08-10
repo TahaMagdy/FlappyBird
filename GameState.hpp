@@ -23,6 +23,7 @@ namespace game {
         Flash *flash;
         Collision _collision;
         int _gameState;
+        int _score;
 
         
         
