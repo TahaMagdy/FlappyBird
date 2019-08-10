@@ -15,7 +15,7 @@ namespace game {
         sf::Sprite sprite(_data->assets.getTexture("Pipe Up"));
         float x = _data->window.getSize().x;
         float y = _data->window.getSize().y - sprite.getGlobalBounds().height;
-        sprite.setPosition(x, y);
+        sprite.setPosition(x, y - _pipeOffSetY);
         
         _pipesArray.push_back(sprite);
         
@@ -26,7 +26,7 @@ namespace game {
     {
         sf::Sprite sprite(_data->assets.getTexture("Pipe Down"));
         float x = _data->window.getSize().x;
-        sprite.setPosition(x, 0.0f);
+        sprite.setPosition(x, 0.0f  - _pipeOffSetY);
         _pipesArray.push_back(sprite);
         
     } ///

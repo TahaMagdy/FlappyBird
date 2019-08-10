@@ -62,6 +62,7 @@ namespace game {
         if ( clock.getElapsedTime().asSeconds() > CONST::pipe_spwan_frequency )
         {
             // generating pipes
+            pipe->randmisePipesOffset();
             pipe->spawningInvisiblePipe();
             pipe->spawningTopPipe();
             pipe->spawningBottomPipe();
