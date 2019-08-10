@@ -30,12 +30,14 @@ namespace game {
         _data->assets.loadTexture("Bird03", CONST::bird_frame3);
         _data->assets.loadTexture("Bird04", CONST::bird_frame4);
         _data->assets.loadTexture("Scoring Pipe", CONST::scoring_pipe);
+        _data->assets.loadFont("Flappy Font", CONST::font);
 
         
         pipe  = new Pipe(_data);
         land  = new Land(_data);
         bird  = new Bird(_data);
         flash = new Flash(_data);
+        hud   = new Hud(_data);
         
         _background.setTexture(this->_data->assets.getTexture("Game Background"));
 
@@ -135,7 +137,7 @@ namespace game {
                                                        1.0f))
                     {
                         _score++;
-                        std::cout << _score << std::endl;
+                        hud->updateScore(_score);
                         scoringPipe.erase(scoringPipe.begin() + i );
                     }
                 }
@@ -164,6 +166,8 @@ namespace game {
         land->drawLand();
         bird->draw();
         flash->draw();
+        hud->draw();
+        
         
         _data->window.display();
     } ///

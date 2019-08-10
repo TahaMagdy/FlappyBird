@@ -36,7 +36,7 @@ namespace CONST {
     
     const float flash_speed = 1500.0f;
     
-    
+    const std::string font = "resources/fonts/FlappyFont.ttf";
 }
 
 enum EnumGameState

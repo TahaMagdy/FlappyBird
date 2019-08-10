@@ -8,6 +8,7 @@
 #include "Bird.hpp"
 #include "Collision.hpp"
 #include "Flash.hpp"
+#include "Hud.hpp"
 
 namespace game {
     
@@ -21,6 +22,7 @@ namespace game {
         Land  *land;
         Bird  *bird;
         Flash *flash;
+        Hud   *hud;
         Collision _collision;
         int _gameState;
         int _score;
