@@ -12,8 +12,8 @@ namespace CONST {
     const std::string play_button = "resources/res/playbutton.png";
     const std::string pipe_up = "resources/res/pipeup.png";
     const std::string pipe_down = "resources/res/pipedown.png";
-    const float pipe_speed = 100.0f;
-    const float pipe_spwan_frequency = 1.5f;
+    const float pipe_speed = 200.0f;
+    const float pipe_spwan_frequency = 0.5f;
     const std::string land = "resources/res/Land.png";
 }
 

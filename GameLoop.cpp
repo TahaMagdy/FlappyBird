@@ -1,10 +1,15 @@
 #include "GameLoop.hpp"
 #include "SplashState.hpp"
+#include <stdlib.h>
+#include <time.h>
+
 
 namespace game {
     
     Game::Game(int width, int height, std::string title)
     {
+        srand(time(nullptr));
+        
         _data->window.create(sf::VideoMode(width, height),
                              title,
                              sf::Style::Close | sf::Style::Titlebar);
