@@ -24,8 +24,10 @@ namespace game {
         
         _data->assets.loadTexture("Pipe Up", CONST::pipe_up);
         _data->assets.loadTexture("Pipe Down", CONST::pipe_down);
+        _data->assets.loadTexture("Land", CONST::land);
         
         pipe = new Pipe(_data);
+        land = new Land(_data);
         
         _background.setTexture(this->_data->assets.getTexture("Game Background"));
 
@@ -55,6 +57,8 @@ namespace game {
     GameState::update(float dt)
     {
         pipe->movePipes(dt);
+        land->landMove(dt);
+        
         if ( clock.getElapsedTime().asSeconds() > CONST::pipe_spwan_frequency )
         {
             // generating pipes
@@ -75,6 +79,7 @@ namespace game {
         _data->window.clear();
         _data->window.draw(_background);
         pipe->drawPipes();
+        land->drawLand();
         
         _data->window.display();
     } ///

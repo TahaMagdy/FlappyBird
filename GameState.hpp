@@ -4,7 +4,7 @@
 #include "State.hpp"
 #include "GameLoop.hpp"
 #include "Pipe.hpp"
-
+#include "Land.hpp"
 
 namespace game {
     
@@ -14,6 +14,8 @@ namespace game {
         GameDataRef _data; 
         sf::Sprite _background;
         Pipe *pipe;
+        sf::Clock clock;
+        Land *land;
         
     public:
         GameState(GameDataRef data);
