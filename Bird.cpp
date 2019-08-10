@@ -104,5 +104,11 @@ namespace game {
         
     }///
     
+    const sf::Sprite
+    &Bird::getSprite() const
+    {
+        return _birdSprite;
+    }
+
     
 }

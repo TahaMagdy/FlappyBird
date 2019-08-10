@@ -30,12 +30,14 @@ namespace game {
         _data->assets.loadTexture("Bird03", CONST::bird_frame3);
         _data->assets.loadTexture("Bird04", CONST::bird_frame4);
         
-        pipe = new Pipe(_data);
-        land = new Land(_data);
-        bird = new Bird(_data);
+        pipe  = new Pipe(_data);
+        land  = new Land(_data);
+        bird  = new Bird(_data);
+        flash = new Flash(_data);
         
         _background.setTexture(this->_data->assets.getTexture("Game Background"));
 
+        _gameState = EnumGameState::eReady;
     } ///
     
     
@@ -51,7 +53,11 @@ namespace game {
             
             if (_data->input.isSpriteClicked(_background, sf::Mouse::Left, _data->window))
             {
-                bird->tap();
+                if (_gameState != EnumGameState::eGameOver)
+                {
+                    _gameState = EnumGameState::ePlaying;
+                    bird->tap();
+                }
             }
         }
         
@@ -61,24 +67,64 @@ namespace game {
     void
     GameState::update(float dt)
     {
-        pipe->movePipes(dt);
-        land->landMove(dt);
-        
-        if ( clock.getElapsedTime().asSeconds() > CONST::pipe_spwan_frequency )
+        if (_gameState != EnumGameState::eGameOver)
         {
-            // generating pipes
-            pipe->randmisePipesOffset();
-            pipe->spawningInvisiblePipe();
-            pipe->spawningTopPipe();
-            pipe->spawningBottomPipe();
+            bird->animate(dt);
+            land->landMove(dt);
+        }
+
+        
+        if (_gameState == EnumGameState::ePlaying)
+        {
+            pipe->movePipes(dt);
             
-            // otherwise the clock will be always larger than the CONST::pipe_spwan_frequency.
-            // and arbitrary number of pipes will be generated
-            clock.restart();
+            if ( clock.getElapsedTime().asSeconds() > CONST::pipe_spwan_frequency )
+            {
+                
+                // generating pipes
+                pipe->randmisePipesOffset();
+                pipe->spawningInvisiblePipe();
+                pipe->spawningTopPipe();
+                pipe->spawningBottomPipe();
+                
+                // otherwise the clock will be always larger than the CONST::pipe_spwan_frequency.
+                // and arbitrary number of pipes will be generated
+                clock.restart();
+            }
+            
+            bird->update(dt);
+            
+            // check for collisions
+            std::vector<sf::Sprite> landSprite = land->getSprites();
+            for (int i = 0; i < landSprite.size(); i++)
+            {
+                if(_collision.checkSpriteCollision(bird->getSprite(),
+                                                   0.625f,
+                                                   landSprite.at(i),
+                                                   1.0f))
+                {
+                    _gameState = EnumGameState::eGameOver;
+                }
+            }
+            
+            std::vector<sf::Sprite> pipeSprite = pipe->getSprites();
+            for (int i = 0; i < pipeSprite.size(); i++)
+            {
+                if(_collision.checkSpriteCollision(bird->getSprite(),
+                                                   0.625f,
+                                                   pipeSprite.at(i),
+                                                   1.0f))
+                {
+                    _gameState = EnumGameState::eGameOver;
+                }
+            }
         }
         
-        bird->animate(dt);
-        bird->update(dt);
+        if (_gameState == EnumGameState::eGameOver)
+        {
+            flash->show(dt);
+        }
+        
         
     } ///
     
@@ -92,6 +138,7 @@ namespace game {
         pipe->drawPipes();
         land->drawLand();
         bird->draw();
+        flash->draw();
         
         _data->window.display();
     } ///

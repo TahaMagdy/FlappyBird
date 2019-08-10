@@ -16,8 +16,8 @@ namespace CONST {
     // pipes
     const std::string pipe_up = path + "pipeup.png";
     const std::string pipe_down = path + "pipedown.png";
-    const float pipe_speed = 200.0f;
-    const float pipe_spwan_frequency = 0.5f;
+    const float pipe_speed = 100.0f;
+    const float pipe_spwan_frequency = 2.5f;
     
     // bird
     const std::string bird_frame1 = path + "bird-01.png";
@@ -32,5 +32,16 @@ namespace CONST {
     const float flyingSpeed = 350.0f;
     const float flyingDuration = 0.25f;
     const float rotation_speed = 100.0f;
+    
+    const float flash_speed = 1500.0f;
+    
+    
 }
+
+enum EnumGameState
+{
+    eReady,
+    ePlaying,
+    eGameOver
+};
 

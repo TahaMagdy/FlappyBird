@@ -6,6 +6,8 @@
 #include "Pipe.hpp"
 #include "Land.hpp"
 #include "Bird.hpp"
+#include "Collision.hpp"
+#include "Flash.hpp"
 
 namespace game {
     
@@ -15,9 +17,14 @@ namespace game {
         GameDataRef _data; 
         sf::Sprite  _background;
         sf::Clock   clock;
-        Pipe *pipe;
-        Land *land;
-        Bird *bird;
+        Pipe  *pipe;
+        Land  *land;
+        Bird  *bird;
+        Flash *flash;
+        Collision _collision;
+        int _gameState;
+
+        
         
     public:
         GameState(GameDataRef data);

@@ -27,6 +27,7 @@ namespace game {
         void animate(float dt);
         void update(float dt);
         void tap();
+        const sf::Sprite &getSprite() const;
     };
     
 }

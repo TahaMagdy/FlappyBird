@@ -24,6 +24,7 @@ namespace game {
         void spawningInvisiblePipe();
         void movePipes(float dt);
         void randmisePipesOffset();
+        const std::vector<sf::Sprite> &getSprites() const;
     };
     
 }

@@ -77,4 +77,11 @@ namespace game {
         _pipeOffSetY = rand() % (_landHeight + 1);
     }///
     
+    const std::vector<sf::Sprite>
+    &Pipe::getSprites() const
+    {
+        return _pipesArray;
+    }
+
+    
 }

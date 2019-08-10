@@ -22,5 +22,6 @@ namespace game {
         Land( GameDataRef data);
         void landMove(float dt);
         void drawLand();
+        const std::vector<sf::Sprite> &getSprites() const;
     };
 }

@@ -39,6 +39,11 @@ namespace game {
         
     }
 
+    const std::vector<sf::Sprite>
+    &Land::getSprites() const
+    {
+        return _landArray;
+    }///
 
 
 }
