@@ -76,7 +76,7 @@ namespace game {
         // move it up if the state is flying
         else if (_birdState == CONST::bird_flying)
         {
-            _birdSprite.move(0, - CONST::flyingSpeed * dt);
+            _birdSprite.move(0, - CONST::flying_speed * dt);
 
             // rotation
             _rotation -= CONST::rotation_speed *dt;
@@ -87,7 +87,7 @@ namespace game {
             _birdSprite.setRotation(_rotation);
         }
         
-        if (_movementClock.getElapsedTime().asSeconds() > CONST::flyingDuration)
+        if (_movementClock.getElapsedTime().asSeconds() > CONST::flying_duration)
         {
             _movementClock.restart();
             _birdState = CONST::bird_falling;

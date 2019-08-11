@@ -8,7 +8,7 @@ namespace game {
     
     Game::Game(int width, int height, std::string title)
     {
-        srand(time(nullptr));
+        srand(static_cast<uint>(time(nullptr)));
         
         _data->window.create(sf::VideoMode(width, height),
                              title,

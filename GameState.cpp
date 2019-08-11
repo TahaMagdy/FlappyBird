@@ -4,7 +4,7 @@
 #include "definitions.hpp"
 #include "MainMenuState.hpp"
 #include "GameState.hpp"
-
+#include "GameOverState.hpp"
 
 namespace game {
     
@@ -110,6 +110,7 @@ namespace game {
                                                    1.0f))
                 {
                     _gameState = EnumGameState::eGameOver;
+                    clock.restart();
                 }
             }
             
@@ -122,6 +123,7 @@ namespace game {
                                                    1.0f))
                 {
                     _gameState = EnumGameState::eGameOver;
+                    clock.restart();
                 }
             }
             
@@ -142,16 +144,18 @@ namespace game {
                     }
                 }
             }
-            
-            
-            
         }
         
         if (_gameState == EnumGameState::eGameOver)
         {
             flash->show(dt);
+            
+            // After n seconds go to the GameOverState
+            if (clock.getElapsedTime().asSeconds() > CONST::time_before_game_over)
+            {
+                _data->machine.addState(stateRef(new GameOverState(_data)), true);
+            }
         }
-        
         
     } ///
     

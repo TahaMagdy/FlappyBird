@@ -30,13 +30,17 @@ namespace CONST {
     const int bird_falling = 1;
     const int bird_flying = 2;
     const float gravity = 350.0f;
-    const float flyingSpeed = 350.0f;
-    const float flyingDuration = 0.25f;
+    const float flying_speed = 350.0f;
+    const float flying_duration = 0.25f;
     const float rotation_speed = 100.0f;
     
     const float flash_speed = 1500.0f;
     
     const std::string font = "resources/fonts/FlappyFont.ttf";
+    
+    const std::string game_over_title = path + "Game-Over-Title.png";
+    const std::string game_over_body = path + "Game-Over-Body.png";
+    const float time_before_game_over = 0.5f;
 }
 
 enum EnumGameState
