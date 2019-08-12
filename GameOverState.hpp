@@ -18,6 +18,7 @@ namespace game {
         sf::Sprite _retryButton;
         sf::Text _scoreText;
         sf::Text _highScoreText;
+        sf::Sprite _medal;
         
         int _score;
         int _high;

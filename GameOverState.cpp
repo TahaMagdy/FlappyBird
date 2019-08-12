@@ -51,7 +51,11 @@ namespace game {
         _data->assets.loadTexture("Game Over Background",
                                   CONST::game_over_background);
         _data->assets.loadTexture("Game Over Title", CONST::game_over_title);
-        _data->assets.loadTexture("Game Over Body", CONST::game_over_body);
+        _data->assets.loadTexture("Game Over Body",  CONST::game_over_body);
+        _data->assets.loadTexture("Bronze Medal",    CONST::bronze_medal);
+        _data->assets.loadTexture("Silver Medal",    CONST::silver_medal);
+        _data->assets.loadTexture("Gold Medal",      CONST::gold_medal);
+        _data->assets.loadTexture("Platinum Medal",  CONST::platinum_medal);
         
         _background.setTexture(this->_data->assets.getTexture("Game Over Background"));
         _gameOverTitle.setTexture(this->_data->assets.getTexture("Game Over Title"));
@@ -84,6 +88,19 @@ namespace game {
                                  _highScoreText.getGlobalBounds().height/2);
         _highScoreText.setPosition(_data->window.getSize().x /10*7.25,
                                    _data->window.getSize().y /1.78);
+        
+        
+        if (_score >= CONST::platinum_score)
+               _medal.setTexture(_data->assets.getTexture("Platinum Medal"));
+        else if (_score >= CONST::gold_score)
+               _medal.setTexture(_data->assets.getTexture("Gold Medal"));
+        else if (_score >= CONST::silver_score)
+               _medal.setTexture(_data->assets.getTexture("Silver Medal"));
+        else
+               _medal.setTexture(_data->assets.getTexture("Bronze Medal"));
+             
+        _medal.setPosition(175, 465);
+        
         
     } ///
     
@@ -122,6 +139,7 @@ namespace game {
         _data->window.draw(_gameOverTitle);
         _data->window.draw(_highScoreText);
         _data->window.draw(_scoreText);
+        _data->window.draw(_medal);
         
         // At the end to draw all at once.
         // draw() after it will not appear.

@@ -41,7 +41,18 @@ namespace CONST {
     const std::string game_over_title = path + "Game-Over-Title.png";
     const std::string game_over_body = path + "Game-Over-Body.png";
     const float time_before_game_over = 0.5f;
-
+    
+    const std::string bronze_medal = path + "Bronze-Medal.png";
+    const std::string silver_medal = path + "Silver-Medal.png";
+    const std::string gold_medal = path + "Gold-Medal.png";
+    const std::string platinum_medal = path + "Platinum-Medal.png";
+    
+    
+    // scores medals
+    const int bronze_score = 0;
+    const int silver_score = 5;
+    const int gold_score = 7;
+    const int platinum_score = 10;
     
 }
 
