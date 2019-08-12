@@ -18,7 +18,20 @@ namespace game {
     void
     GameState::init()
     {
-        std::cout << "Game State\n";
+        if (!_hitSoundBuffer.loadFromFile(CONST::sound_hit))
+            std::cout << "Hit sound Loading error\n";
+        
+        if (!_wingSoundBuffer.loadFromFile(CONST::sound_Wing))
+            std::cout << "Wing sound Loading error\n";
+        
+        if (!_pointSoundBuffer.loadFromFile(CONST::sound_point))
+            std::cout << "Point sound Loading error\n";
+
+        _hitSound.setBuffer(_hitSoundBuffer);
+        _wingSound.setBuffer(_wingSoundBuffer);
+        _pointSound.setBuffer(_pointSoundBuffer);
+        
+        
         _data->assets.loadTexture("Game Background",
                                   CONST::game_background);
         
@@ -62,6 +75,7 @@ namespace game {
                 {
                     _gameState = EnumGameState::ePlaying;
                     bird->tap();
+                    _wingSound.play();
                 }
             }
         }
@@ -139,6 +153,7 @@ namespace game {
                                                        1.0f))
                     {
                         _score++;
+                        _pointSound.play();
                         hud->updateScore(_score);
                         scoringPipe.erase(scoringPipe.begin() + i );
                     }
@@ -149,6 +164,7 @@ namespace game {
         if (_gameState == EnumGameState::eGameOver)
         {
             flash->show(dt);
+            _hitSound.play();
             
             // After n seconds go to the GameOverState
             if (clock.getElapsedTime().asSeconds() > CONST::time_before_game_over)
