@@ -1,5 +1,7 @@
 #include <iostream>
 #include <sstream>
+#include <fstream>
+
 #include <SFML/Graphics.hpp>
 #include "definitions.hpp"
 #include "MainMenuState.hpp"
@@ -9,7 +11,9 @@
 namespace game {
     
     
-    GameOverState::GameOverState(GameDataRef data) : _data(data)
+    GameOverState::GameOverState(GameDataRef data, int score)
+        : _data(data),
+          _score(score)
     {
         
     } ///
@@ -18,6 +22,32 @@ namespace game {
     void
     GameOverState::init()
     {
+        // Saving the highest score
+        std::ifstream fread;
+        fread.open("resources/game.data");
+        
+        if (fread.is_open())
+            while (!fread.eof())
+                fread >> _high;
+        else
+            std::cout << "Cannot Open game.data file\n";
+        
+        fread.close();
+        
+        std::ofstream fwrite("resources/game.data");
+        
+        if (fwrite.is_open())
+        {
+            if (_score > _high)
+                _high = _score;
+            
+            fwrite << _high;
+        }
+        
+        fwrite.close();
+        
+        
+        
         _data->assets.loadTexture("Game Over Background",
                                   CONST::game_over_background);
         _data->assets.loadTexture("Game Over Title", CONST::game_over_title);
@@ -35,6 +65,25 @@ namespace game {
         
         _retryButton.setPosition(sf::Vector2f((_data->window.getSize().x / 2) - (_retryButton.getGlobalBounds().width / 2), _gameOverContainer.getPosition().y + _gameOverContainer.getGlobalBounds().height + (_retryButton.getGlobalBounds().height * 0.2)));
 
+        
+        _scoreText.setString(std::to_string(_score));
+        _scoreText.setFont(_data->assets.getFont("Flappy Font"));
+        _scoreText.setCharacterSize(56);
+        _scoreText.setFillColor(sf::Color::White);
+        _scoreText.setOrigin(sf::Vector2f(_scoreText.getGlobalBounds().width/2,
+                                          _scoreText.getGlobalBounds().height/2));
+        _scoreText.setPosition(sf::Vector2f(_data->window.getSize().x /10*7.25,
+                                            _data->window.getSize().y /2.15));
+        
+ 
+        _highScoreText.setString(std::to_string(_high));
+        _highScoreText.setFont(_data->assets.getFont("Flappy Font"));
+        _highScoreText.setCharacterSize(56);
+        _highScoreText.setFillColor(sf::Color::White);
+        _highScoreText.setOrigin(_highScoreText.getGlobalBounds().width/2,
+                                 _highScoreText.getGlobalBounds().height/2);
+        _highScoreText.setPosition(_data->window.getSize().x /10*7.25,
+                                   _data->window.getSize().y /1.78);
         
     } ///
     
@@ -71,6 +120,8 @@ namespace game {
         _data->window.draw(_retryButton);
         _data->window.draw(_gameOverContainer);
         _data->window.draw(_gameOverTitle);
+        _data->window.draw(_highScoreText);
+        _data->window.draw(_scoreText);
         
         // At the end to draw all at once.
         // draw() after it will not appear.

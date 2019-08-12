@@ -41,6 +41,8 @@ namespace CONST {
     const std::string game_over_title = path + "Game-Over-Title.png";
     const std::string game_over_body = path + "Game-Over-Body.png";
     const float time_before_game_over = 0.5f;
+
+    
 }
 
 enum EnumGameState

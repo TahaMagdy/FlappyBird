@@ -153,7 +153,7 @@ namespace game {
             // After n seconds go to the GameOverState
             if (clock.getElapsedTime().asSeconds() > CONST::time_before_game_over)
             {
-                _data->machine.addState(stateRef(new GameOverState(_data)), true);
+                _data->machine.addState(stateRef(new GameOverState(_data, _score)), true);
             }
         }
         
