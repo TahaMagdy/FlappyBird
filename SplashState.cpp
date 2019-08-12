@@ -18,8 +18,8 @@ namespace game {
     void
     SplashState::init()
     {
-        _data->assets.loadTexture("Splash State Background",
-                                  CONST::splash_scence_background);
+        //_data->assets.loadTexture("Splash State Background",                                CONST::splash_scence_background);
+        _data->assets.loadTexture("Splash State Background",                                CONST::game_background);
         _background.setTexture(this->_data->assets.getTexture("Splash State Background"));
     } ///
     

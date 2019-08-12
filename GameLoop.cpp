@@ -38,6 +38,7 @@ namespace game {
             currentTime = newTime;
             accumelator += frameTime;
             
+            // TODO: this while is expensive
             while(accumelator >= dt)
             {
                 this->_data->machine.getActiveState()->handleInput();
