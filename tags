@@ -1,0 +1,241 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AssetManager	AssetManager.hpp	/^        AssetManager() { }$/;"	f	class:game::AssetManager
+AssetManager	AssetManager.hpp	/^    class AssetManager$/;"	c	namespace:game
+Bird	Bird.cpp	/^    Bird::Bird(GameDataRef data) : _data(data)$/;"	f	class:game::Bird
+Bird	Bird.hpp	/^    class Bird$/;"	c	namespace:game
+CONST	definitions.hpp	/^namespace CONST {$/;"	n
+Collision	Collision.cpp	/^    Collision::Collision()$/;"	f	class:game::Collision
+Collision	Collision.hpp	/^    class Collision$/;"	c	namespace:game
+EnumGameState	definitions.hpp	/^enum EnumGameState$/;"	g
+Flash	Flash.cpp	/^    Flash::Flash(GameDataRef data) : _data(data)$/;"	f	class:game::Flash
+Flash	Flash.hpp	/^    class Flash$/;"	c	namespace:game
+Game	GameLoop.cpp	/^    Game::Game(int width, int height, std::string title)$/;"	f	class:game::Game
+Game	GameLoop.hpp	/^    class Game$/;"	c	namespace:game
+GameData	GameLoop.hpp	/^    struct GameData$/;"	s	namespace:game
+GameDataRef	GameLoop.hpp	/^    typedef std::shared_ptr<GameData> GameDataRef;$/;"	t	namespace:game
+GameOverState	GameOverState.cpp	/^    GameOverState::GameOverState(GameDataRef data, int score)$/;"	f	class:game::GameOverState
+GameOverState	GameOverState.hpp	/^    class GameOverState : public State$/;"	c	namespace:game
+GameState	GameState.cpp	/^    GameState::GameState  (GameDataRef data) : _data(data)$/;"	f	class:game::GameState
+GameState	GameState.hpp	/^    class GameState : public State$/;"	c	namespace:game
+Hud	Hud.cpp	/^    Hud::Hud(GameDataRef data) : _data(data)$/;"	f	class:game::Hud
+Hud	Hud.hpp	/^    class Hud$/;"	c	namespace:game
+InputManager	InputManger.hpp	/^        InputManager() { }$/;"	f	class:game::InputManager
+InputManager	InputManger.hpp	/^    class InputManager$/;"	c	namespace:game
+Land	Land.cpp	/^    Land::Land(GameDataRef data) : _data(data)$/;"	f	class:game::Land
+Land	Land.hpp	/^    class Land$/;"	c	namespace:game
+MainMenuState	MainMenuState.hpp	/^    class MainMenuState : public State$/;"	c	namespace:game
+MainMenuState	MainMenueState.cpp	/^    MainMenuState::MainMenuState(GameDataRef data) : _data(data)$/;"	f	class:game::MainMenuState
+Pipe	Pipe.cpp	/^    Pipe::Pipe(GameDataRef data) : _data(data)$/;"	f	class:game::Pipe
+Pipe	Pipe.hpp	/^    class Pipe$/;"	c	namespace:game
+SplashState	SplashState.cpp	/^    SplashState::SplashState(GameDataRef data) : _data(data)$/;"	f	class:game::SplashState
+SplashState	SplashState.hpp	/^    class SplashState : public State$/;"	c	namespace:game
+State	State.hpp	/^    class State$/;"	c	namespace:game
+StateMachine	StateMachine.hpp	/^        StateMachine() { }$/;"	f	class:game::StateMachine
+StateMachine	StateMachine.hpp	/^    class StateMachine$/;"	c	namespace:game
+_animationFrame	Bird.hpp	/^        std::vector<sf::Texture> _animationFrame;$/;"	m	class:game::Bird
+_animationIterator	Bird.hpp	/^        unsigned int _animationIterator;$/;"	m	class:game::Bird
+_background	GameOverState.hpp	/^        sf::Sprite _background;$/;"	m	class:game::GameOverState
+_background	GameState.hpp	/^        sf::Sprite  _background;$/;"	m	class:game::GameState
+_background	MainMenuState.hpp	/^        sf::Sprite _background;$/;"	m	class:game::MainMenuState
+_background	SplashState.hpp	/^        sf::Sprite _background;$/;"	m	class:game::SplashState
+_birdSprite	Bird.hpp	/^        sf::Sprite _birdSprite;$/;"	m	class:game::Bird
+_birdState	Bird.hpp	/^        int _birdState;$/;"	m	class:game::Bird
+_clock	Bird.hpp	/^        sf::Clock _clock, _movementClock;$/;"	m	class:game::Bird
+_clock	GameLoop.hpp	/^        sf::Clock _clock;$/;"	m	class:game::Game
+_clock	GameOverState.hpp	/^        sf::Clock _clock;$/;"	m	class:game::GameOverState
+_clock	SplashState.hpp	/^        sf::Clock _clock;$/;"	m	class:game::SplashState
+_collision	GameState.hpp	/^        Collision _collision;$/;"	m	class:game::GameState
+_data	Bird.hpp	/^        GameDataRef _data;$/;"	m	class:game::Bird
+_data	Flash.hpp	/^        GameDataRef _data;$/;"	m	class:game::Flash
+_data	GameLoop.hpp	/^        GameDataRef _data = std::make_shared<GameData>();$/;"	m	class:game::Game
+_data	GameOverState.hpp	/^        GameDataRef _data;$/;"	m	class:game::GameOverState
+_data	GameState.hpp	/^        GameDataRef _data; $/;"	m	class:game::GameState
+_data	Hud.hpp	/^        GameDataRef _data;$/;"	m	class:game::Hud
+_data	Land.hpp	/^        GameDataRef _data;$/;"	m	class:game::Land
+_data	MainMenuState.hpp	/^        GameDataRef _data;$/;"	m	class:game::MainMenuState
+_data	Pipe.hpp	/^        GameDataRef _data;$/;"	m	class:game::Pipe
+_data	SplashState.hpp	/^        GameDataRef _data;$/;"	m	class:game::SplashState
+_flashOn	Flash.hpp	/^        bool _flashOn;$/;"	m	class:game::Flash
+_fonts	AssetManager.hpp	/^        std::map<std::string, sf::Font> _fonts;$/;"	m	class:game::AssetManager
+_gameOverContainer	GameOverState.hpp	/^        sf::Sprite _gameOverContainer;$/;"	m	class:game::GameOverState
+_gameOverTitle	GameOverState.hpp	/^        sf::Sprite _gameOverTitle;$/;"	m	class:game::GameOverState
+_gameState	GameState.hpp	/^        int _gameState;$/;"	m	class:game::GameState
+_high	GameOverState.hpp	/^        int _high;$/;"	m	class:game::GameOverState
+_highScoreText	GameOverState.hpp	/^        sf::Text _highScoreText;$/;"	m	class:game::GameOverState
+_hitSound	GameState.hpp	/^        sf::Sound _hitSound;$/;"	m	class:game::GameState
+_hitSoundBuffer	GameState.hpp	/^        sf::SoundBuffer _hitSoundBuffer;$/;"	m	class:game::GameState
+_isAdding	StateMachine.hpp	/^        bool _isAdding;$/;"	m	class:game::StateMachine
+_isRemoving	StateMachine.hpp	/^        bool _isRemoving;$/;"	m	class:game::StateMachine
+_isReplacing	StateMachine.hpp	/^        bool _isReplacing;$/;"	m	class:game::StateMachine
+_landArray	Land.hpp	/^        std::vector<sf::Sprite> _landArray;$/;"	m	class:game::Land
+_landHeight	Pipe.hpp	/^        int _landHeight;$/;"	m	class:game::Pipe
+_medal	GameOverState.hpp	/^        sf::Sprite _medal;$/;"	m	class:game::GameOverState
+_movementClock	Bird.hpp	/^        sf::Clock _clock, _movementClock;$/;"	m	class:game::Bird
+_newState	StateMachine.hpp	/^        stateRef _newState;$/;"	m	class:game::StateMachine
+_pipeOffSetY	Pipe.hpp	/^        int _pipeOffSetY;$/;"	m	class:game::Pipe
+_pipesArray	Pipe.hpp	/^        std::vector<sf::Sprite> _pipesArray;$/;"	m	class:game::Pipe
+_playButton	MainMenuState.hpp	/^        sf::Sprite _playButton;$/;"	m	class:game::MainMenuState
+_pointSound	GameState.hpp	/^        sf::Sound _pointSound;$/;"	m	class:game::GameState
+_pointSoundBuffer	GameState.hpp	/^        sf::SoundBuffer _pointSoundBuffer;$/;"	m	class:game::GameState
+_retryButton	GameOverState.hpp	/^        sf::Sprite _retryButton;$/;"	m	class:game::GameOverState
+_rotation	Bird.hpp	/^        float _rotation;$/;"	m	class:game::Bird
+_score	GameOverState.hpp	/^        int _score;$/;"	m	class:game::GameOverState
+_score	GameState.hpp	/^        int _score;$/;"	m	class:game::GameState
+_scoreText	GameOverState.hpp	/^        sf::Text _scoreText;$/;"	m	class:game::GameOverState
+_scoreText	Hud.hpp	/^        sf::Text _scoreText;$/;"	m	class:game::Hud
+_scoringPipesArray	Pipe.hpp	/^        std::vector<sf::Sprite> _scoringPipesArray;$/;"	m	class:game::Pipe
+_shape	Flash.hpp	/^        sf::RectangleShape _shape;$/;"	m	class:game::Flash
+_states	StateMachine.hpp	/^        std::stack<stateRef> _states;$/;"	m	class:game::StateMachine
+_textures	AssetManager.hpp	/^        std::map<std::string, sf::Texture> _textures;$/;"	m	class:game::AssetManager
+_title	MainMenuState.hpp	/^        sf::Sprite _title;$/;"	m	class:game::MainMenuState
+_wingSound	GameState.hpp	/^        sf::Sound _wingSound; $/;"	m	class:game::GameState
+_wingSoundBuffer	GameState.hpp	/^        sf::SoundBuffer _wingSoundBuffer;$/;"	m	class:game::GameState
+addState	StateMachine.cpp	/^    StateMachine::addState(stateRef newState, bool isReplacing)$/;"	f	class:game::StateMachine
+animate	Bird.cpp	/^    Bird::animate(float dt)$/;"	f	class:game::Bird
+assets	GameLoop.hpp	/^        AssetManager assets;$/;"	m	struct:game::GameData
+bird	GameState.hpp	/^        Bird  *bird;$/;"	m	class:game::GameState
+bird_animation_duration	definitions.hpp	/^    const float bird_animation_duration = 0.5f;$/;"	m	namespace:CONST
+bird_falling	definitions.hpp	/^    const int bird_falling = 1;$/;"	m	namespace:CONST
+bird_flying	definitions.hpp	/^    const int bird_flying = 2;$/;"	m	namespace:CONST
+bird_frame1	definitions.hpp	/^    const std::string bird_frame1 = path_res + "bird-01.png";$/;"	m	namespace:CONST
+bird_frame2	definitions.hpp	/^    const std::string bird_frame2 = path_res + "bird-02.png";$/;"	m	namespace:CONST
+bird_frame3	definitions.hpp	/^    const std::string bird_frame3 = path_res + "bird-03.png";$/;"	m	namespace:CONST
+bird_frame4	definitions.hpp	/^    const std::string bird_frame4 = path_res + "bird-04.png";$/;"	m	namespace:CONST
+bird_still	definitions.hpp	/^    const int bird_still = 0;$/;"	m	namespace:CONST
+bronze_medal	definitions.hpp	/^    const std::string bronze_medal = path_res + "Bronze-Medal.png";$/;"	m	namespace:CONST
+bronze_score	definitions.hpp	/^    const int bronze_score = 0;$/;"	m	namespace:CONST
+checkSpriteCollision	Collision.cpp	/^    bool Collision::checkSpriteCollision(sf::Sprite s1,$/;"	f	class:game::Collision
+clock	GameState.hpp	/^        sf::Clock   clock;$/;"	m	class:game::GameState
+draw	Bird.cpp	/^    Bird::draw()$/;"	f	class:game::Bird
+draw	Flash.cpp	/^    Flash::draw()$/;"	f	class:game::Flash
+draw	GameOverState.cpp	/^    GameOverState::draw(float dt)$/;"	f	class:game::GameOverState
+draw	GameState.cpp	/^    GameState::draw(float dt)$/;"	f	class:game::GameState
+draw	Hud.cpp	/^    Hud::draw()$/;"	f	class:game::Hud
+draw	MainMenueState.cpp	/^    MainMenuState::draw(float dt)$/;"	f	class:game::MainMenuState
+draw	SplashState.cpp	/^    SplashState::draw(float dt)$/;"	f	class:game::SplashState
+drawLand	Land.cpp	/^    void Land::drawLand()$/;"	f	class:game::Land
+drawPipes	Pipe.cpp	/^    Pipe::drawPipes()$/;"	f	class:game::Pipe
+dt	GameLoop.hpp	/^        const float dt = 1.0f \/ 60.0f;$/;"	m	class:game::Game
+eGameOver	definitions.hpp	/^    eGameOver$/;"	e	enum:EnumGameState
+ePlaying	definitions.hpp	/^    ePlaying,$/;"	e	enum:EnumGameState
+eReady	definitions.hpp	/^    eReady,$/;"	e	enum:EnumGameState
+flash	GameState.hpp	/^        Flash *flash;$/;"	m	class:game::GameState
+flash_speed	definitions.hpp	/^    const float flash_speed = 1500.0f;$/;"	m	namespace:CONST
+flying_duration	definitions.hpp	/^    const float flying_duration = 0.25f;$/;"	m	namespace:CONST
+flying_speed	definitions.hpp	/^    const float flying_speed = 350.0f;$/;"	m	namespace:CONST
+font	definitions.hpp	/^    const std::string font = "resources\/fonts\/FlappyFont.ttf";$/;"	m	namespace:CONST
+game	AssetManager.cpp	/^namespace game {$/;"	n	file:
+game	AssetManager.hpp	/^namespace game {$/;"	n
+game	Bird.cpp	/^namespace game {$/;"	n	file:
+game	Bird.hpp	/^namespace game {$/;"	n
+game	Collision.cpp	/^namespace game {$/;"	n	file:
+game	Collision.hpp	/^namespace game$/;"	n
+game	Flash.cpp	/^namespace game {$/;"	n	file:
+game	Flash.hpp	/^namespace game {$/;"	n
+game	GameLoop.cpp	/^namespace game {$/;"	n	file:
+game	GameLoop.hpp	/^namespace game {$/;"	n
+game	GameOverState.cpp	/^namespace game {$/;"	n	file:
+game	GameOverState.hpp	/^namespace game {$/;"	n
+game	GameState.cpp	/^namespace game {$/;"	n	file:
+game	GameState.hpp	/^namespace game {$/;"	n
+game	Hud.cpp	/^namespace game {$/;"	n	file:
+game	Hud.hpp	/^namespace game {$/;"	n
+game	InputManger.cpp	/^namespace game {$/;"	n	file:
+game	InputManger.hpp	/^namespace game {$/;"	n
+game	Land.cpp	/^namespace game {$/;"	n	file:
+game	Land.hpp	/^namespace game {$/;"	n
+game	MainMenuState.hpp	/^namespace game {$/;"	n
+game	MainMenueState.cpp	/^namespace game {$/;"	n	file:
+game	Pipe.cpp	/^namespace game {$/;"	n	file:
+game	Pipe.hpp	/^namespace game {$/;"	n
+game	SplashState.cpp	/^namespace game {$/;"	n	file:
+game	SplashState.hpp	/^namespace game {$/;"	n
+game	State.hpp	/^namespace game {$/;"	n
+game	StateMachine.cpp	/^namespace game$/;"	n	file:
+game	StateMachine.hpp	/^namespace game {$/;"	n
+game_background	definitions.hpp	/^    const std::string game_background = path_res + "sky.png";$/;"	m	namespace:CONST
+game_name	definitions.hpp	/^    const std::string game_name = path_res + "title.png";$/;"	m	namespace:CONST
+game_over_background	definitions.hpp	/^    const std::string game_over_background = path_res + "sky.png";$/;"	m	namespace:CONST
+game_over_body	definitions.hpp	/^    const std::string game_over_body = path_res + "Game-Over-Body.png";$/;"	m	namespace:CONST
+game_over_title	definitions.hpp	/^    const std::string game_over_title = path_res + "Game-Over-Title.png";$/;"	m	namespace:CONST
+getActiveState	StateMachine.cpp	/^    &StateMachine::getActiveState()$/;"	f	class:game::StateMachine
+getFont	AssetManager.cpp	/^    &AssetManager::getFont(std::string name)$/;"	f	class:game::AssetManager
+getMousePosition	InputManger.cpp	/^    InputManager::getMousePosition(sf::RenderWindow &window)$/;"	f	class:game::InputManager
+getScoringSprites	Pipe.cpp	/^    &Pipe::getScoringSprites()$/;"	f	class:game::Pipe
+getSprite	Bird.cpp	/^    &Bird::getSprite() const$/;"	f	class:game::Bird
+getSprites	Land.cpp	/^    &Land::getSprites() const$/;"	f	class:game::Land
+getSprites	Pipe.cpp	/^    &Pipe::getSprites() const$/;"	f	class:game::Pipe
+getTexture	AssetManager.cpp	/^    &AssetManager::getTexture(std::string name)$/;"	f	class:game::AssetManager
+gold_medal	definitions.hpp	/^    const std::string gold_medal = path_res + "Gold-Medal.png";$/;"	m	namespace:CONST
+gold_score	definitions.hpp	/^    const int gold_score = 7;$/;"	m	namespace:CONST
+gravity	definitions.hpp	/^    const float gravity = 350.0f;$/;"	m	namespace:CONST
+handleInput	GameOverState.cpp	/^    GameOverState::handleInput()$/;"	f	class:game::GameOverState
+handleInput	GameState.cpp	/^    GameState::handleInput()$/;"	f	class:game::GameState
+handleInput	MainMenueState.cpp	/^    MainMenuState::handleInput()$/;"	f	class:game::MainMenuState
+handleInput	SplashState.cpp	/^    SplashState::handleInput()$/;"	f	class:game::SplashState
+hud	GameState.hpp	/^        Hud   *hud;$/;"	m	class:game::GameState
+init	GameOverState.cpp	/^    GameOverState::init()$/;"	f	class:game::GameOverState
+init	GameState.cpp	/^    GameState::init()$/;"	f	class:game::GameState
+init	MainMenueState.cpp	/^    MainMenuState::init()$/;"	f	class:game::MainMenuState
+init	SplashState.cpp	/^    SplashState::init()$/;"	f	class:game::SplashState
+input	GameLoop.hpp	/^        InputManager input;$/;"	m	struct:game::GameData
+isSpriteClicked	InputManger.cpp	/^    InputManager::isSpriteClicked(sf::Sprite object,$/;"	f	class:game::InputManager
+land	GameState.hpp	/^        Land  *land;$/;"	m	class:game::GameState
+land	definitions.hpp	/^    const std::string land = path_res + "Land.png";$/;"	m	namespace:CONST
+landMove	Land.cpp	/^    void Land::landMove(float dt)$/;"	f	class:game::Land
+loadFont	AssetManager.cpp	/^    AssetManager::loadFont(std::string name, std::string fileName)$/;"	f	class:game::AssetManager
+loadTexture	AssetManager.cpp	/^    AssetManager::loadTexture(std::string name, std::string fileName)$/;"	f	class:game::AssetManager
+machine	GameLoop.hpp	/^        StateMachine machine;$/;"	m	struct:game::GameData
+main	main.cpp	/^int main() {$/;"	f
+main_menu_background	definitions.hpp	/^    const std::string main_menu_background = path_res + "sky.png";$/;"	m	namespace:CONST
+movePipes	Pipe.cpp	/^    void Pipe::movePipes(float dt)$/;"	f	class:game::Pipe
+path_aud	definitions.hpp	/^    const std::string path_aud = "resources\/audio\/";$/;"	m	namespace:CONST
+path_res	definitions.hpp	/^    const std::string path_res = "resources\/res\/";$/;"	m	namespace:CONST
+pipe	GameState.hpp	/^        Pipe  *pipe;$/;"	m	class:game::GameState
+pipe_down	definitions.hpp	/^    const std::string pipe_down = path_res + "pipedown.png";$/;"	m	namespace:CONST
+pipe_speed	definitions.hpp	/^    const float pipe_speed = 200.0f;$/;"	m	namespace:CONST
+pipe_spwan_frequency	definitions.hpp	/^    const float pipe_spwan_frequency = 2.5f;$/;"	m	namespace:CONST
+pipe_up	definitions.hpp	/^    const std::string pipe_up = path_res + "pipeup.png";$/;"	m	namespace:CONST
+platinum_medal	definitions.hpp	/^    const std::string platinum_medal = path_res + "Platinum-Medal.png";$/;"	m	namespace:CONST
+platinum_score	definitions.hpp	/^    const int platinum_score = 10;$/;"	m	namespace:CONST
+play_button	definitions.hpp	/^    const std::string play_button = path_res + "playbutton.png";$/;"	m	namespace:CONST
+processStateChanges	StateMachine.cpp	/^    StateMachine::processStateChanges()$/;"	f	class:game::StateMachine
+puase	State.hpp	/^        virtual void puase() { }$/;"	f	class:game::State
+randmisePipesOffset	Pipe.cpp	/^    Pipe::randmisePipesOffset()$/;"	f	class:game::Pipe
+removeState	StateMachine.cpp	/^    StateMachine::removeState()$/;"	f	class:game::StateMachine
+resume	State.hpp	/^        virtual void resume() { }$/;"	f	class:game::State
+rotation_speed	definitions.hpp	/^    const float rotation_speed = 100.0f;$/;"	m	namespace:CONST
+run	GameLoop.cpp	/^    Game::run()$/;"	f	class:game::Game
+scoring_pipe	definitions.hpp	/^    const std::string scoring_pipe = path_res + "InvisibleScoringPipe.png";$/;"	m	namespace:CONST
+screen_height	definitions.hpp	/^    const int screen_height = 1024;$/;"	m	namespace:CONST
+screen_width	definitions.hpp	/^    const int screen_width = 768;$/;"	m	namespace:CONST
+show	Flash.cpp	/^    Flash::show(float dt)$/;"	f	class:game::Flash
+silver_medal	definitions.hpp	/^    const std::string silver_medal = path_res + "Silver-Medal.png";$/;"	m	namespace:CONST
+silver_score	definitions.hpp	/^    const int silver_score = 5;$/;"	m	namespace:CONST
+sound_Wing	definitions.hpp	/^    const std::string sound_Wing = path_aud + "Wing.wav";$/;"	m	namespace:CONST
+sound_hit	definitions.hpp	/^    const std::string sound_hit = path_aud + "Hit.wav";$/;"	m	namespace:CONST
+sound_point	definitions.hpp	/^    const std::string sound_point = path_aud + "Point.wav";$/;"	m	namespace:CONST
+spawningBottomPipe	Pipe.cpp	/^    Pipe::spawningBottomPipe()$/;"	f	class:game::Pipe
+spawningInvisiblePipe	Pipe.cpp	/^    Pipe::spawningInvisiblePipe()$/;"	f	class:game::Pipe
+spawningScoringPipe	Pipe.cpp	/^    Pipe::spawningScoringPipe()$/;"	f	class:game::Pipe
+spawningTopPipe	Pipe.cpp	/^    Pipe::spawningTopPipe()$/;"	f	class:game::Pipe
+splash_scence_background	definitions.hpp	/^    const std::string splash_scence_background = path_res + "splash background.png";$/;"	m	namespace:CONST
+splash_state_show_time	definitions.hpp	/^    const float splash_state_show_time = 0.5f;$/;"	m	namespace:CONST
+stateRef	StateMachine.hpp	/^    typedef std::unique_ptr<State> stateRef;$/;"	t	namespace:game
+tap	Bird.cpp	/^    Bird::tap()$/;"	f	class:game::Bird
+time_before_game_over	definitions.hpp	/^    const float time_before_game_over = 0.5f;$/;"	m	namespace:CONST
+update	Bird.cpp	/^    Bird::update(float dt)$/;"	f	class:game::Bird
+update	GameOverState.cpp	/^    GameOverState::update(float dt)$/;"	f	class:game::GameOverState
+update	GameState.cpp	/^    GameState::update(float dt)$/;"	f	class:game::GameState
+update	MainMenueState.cpp	/^    MainMenuState::update(float dt)$/;"	f	class:game::MainMenuState
+update	SplashState.cpp	/^    SplashState::update(float dt)$/;"	f	class:game::SplashState
+updateScore	Hud.cpp	/^    Hud::updateScore(int score)$/;"	f	class:game::Hud
+window	GameLoop.hpp	/^        sf::RenderWindow window;$/;"	m	struct:game::GameData
+~AssetManager	AssetManager.hpp	/^        ~AssetManager() { }$/;"	f	class:game::AssetManager
+~InputManager	InputManger.hpp	/^        ~InputManager() { }$/;"	f	class:game::InputManager
+~StateMachine	StateMachine.hpp	/^        ~StateMachine() { }$/;"	f	class:game::StateMachine

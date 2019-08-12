@@ -1,0 +1,3 @@
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build/CMakeFiles/rebuild_cache.dir
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build/CMakeFiles/edit_cache.dir
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build/CMakeFiles/FlappyBird.dir

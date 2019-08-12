@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/AssetManager.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/AssetManager.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/AssetManager.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Bird.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Bird.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Bird.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Collision.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Collision.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Collision.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Flash.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Flash.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Flash.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/GameLoop.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/GameOverState.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameOverState.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameOverState.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/GameState.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameState.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameState.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Hud.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Hud.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Hud.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/InputManger.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/InputManger.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/InputManger.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Land.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Land.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Land.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/MainMenueState.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/MainMenueState.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/MainMenueState.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/Pipe.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Pipe.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Pipe.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/SplashState.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/SplashState.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/SplashState.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/StateMachine.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/StateMachine.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/StateMachine.cpp"
+},
+{
+  "directory": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -g   -std=gnu++14 -o CMakeFiles/FlappyBird.dir/main.cpp.o -c /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/main.cpp",
+  "file": "/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/main.cpp"
+}
+]

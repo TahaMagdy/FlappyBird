@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 namespace CONST {
     const std::string path_res = "resources/res/";
@@ -30,7 +31,7 @@ namespace CONST {
     const int bird_falling = 1;
     const int bird_flying = 2;
     const float gravity = 350.0f;
-    const float flying_speed = 350.0f;
+    const float flying_speed = 450.0f;
     const float flying_duration = 0.25f;
     const float rotation_speed = 100.0f;
     
