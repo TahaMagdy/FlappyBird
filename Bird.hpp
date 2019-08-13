@@ -22,7 +22,7 @@ namespace game {
         
         
     public:
-        Bird(GameDataRef data);
+        explicit Bird(GameDataRef data);
         void draw();
         void animate(float dt);
         void update(float dt);

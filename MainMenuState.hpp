@@ -16,7 +16,7 @@ namespace game {
         sf::Sprite _playButton;
         
     public:
-        MainMenuState(GameDataRef data);
+        explicit MainMenuState(GameDataRef data);
         
         void init();
         void handleInput();

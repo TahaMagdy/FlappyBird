@@ -13,7 +13,7 @@ namespace game {
         sf::Text _scoreText;
         
     public:
-        Hud(GameDataRef data);
+        explicit Hud(GameDataRef data);
         void draw();
         void updateScore(int score);
     };

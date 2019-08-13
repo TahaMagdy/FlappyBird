@@ -15,7 +15,7 @@ namespace game {
         sf::Sprite _background;
         
     public:
-        SplashState(GameDataRef data);
+        explicit SplashState(GameDataRef data);
         
         void init();
         void handleInput();

@@ -19,7 +19,7 @@ namespace game {
          * - Sprite: a computer graphic that may be moved on-screen and otherwise
          *   manipulated as a single entity.
          */
-        Land( GameDataRef data);
+        explicit Land( GameDataRef data);
         void landMove(float dt);
         void drawLand();
         const std::vector<sf::Sprite> &getSprites() const;

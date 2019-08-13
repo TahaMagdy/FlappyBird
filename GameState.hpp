@@ -39,7 +39,7 @@ namespace game {
         
         
     public:
-        GameState(GameDataRef data);
+        explicit GameState(GameDataRef data);
         
         void init();
         void handleInput();

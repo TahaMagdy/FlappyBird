@@ -8,7 +8,7 @@ namespace game {
     {
         
     public:
-        InputManager() { }
+        explicit InputManager() { }
         ~InputManager() { }
         
         bool

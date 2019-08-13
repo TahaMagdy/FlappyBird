@@ -24,7 +24,7 @@ namespace game {
         int _high;
         
     public:
-        GameOverState(GameDataRef data, int score);
+        explicit GameOverState(GameDataRef data, int score);
         
         void init();
         void handleInput();

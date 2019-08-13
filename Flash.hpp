@@ -15,7 +15,7 @@ namespace game {
         bool _flashOn;
         
     public:
-        Flash(GameDataRef data);
+        explicit Flash(GameDataRef data);
         void show(float dt);
         void draw();
     };

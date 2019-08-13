@@ -26,6 +26,10 @@ GameLoop.hpp
 vector
 -
 
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Collision.cpp
+Collision.hpp
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Collision.hpp
+
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/Collision.hpp
 SFML/Graphics.hpp
 -
@@ -41,6 +45,16 @@ GameLoop.hpp
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.hpp
 definitions.hpp
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/definitions.hpp
+
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.cpp
+GameLoop.hpp
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.hpp
+SplashState.hpp
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/SplashState.hpp
+stdlib.h
+-
+time.h
+-
 
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.hpp
 memory
@@ -132,6 +146,10 @@ definitions.hpp
 GameLoop.hpp
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.hpp
 
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/InputManger.cpp
+InputManger.hpp
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/InputManger.hpp
+
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/InputManger.hpp
 SFML/Graphics.hpp
 -
@@ -209,6 +227,10 @@ GameLoop.hpp
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/GameLoop.hpp
 
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/State.hpp
+
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/StateMachine.cpp
+StateMachine.hpp
+/Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/StateMachine.hpp
 
 /Users/taha/cs/C++/side_projects/FlappyBird/FlappyBird/StateMachine.hpp
 memory

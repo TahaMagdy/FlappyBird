@@ -12,7 +12,7 @@ namespace game {
         std::map<std::string, sf::Font> _fonts;
         
     public:
-        AssetManager() { }
+        explicit AssetManager() { }
         ~AssetManager() { }
         
         void loadTexture(std::string name, std::string fileName);

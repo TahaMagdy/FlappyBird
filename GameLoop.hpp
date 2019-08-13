@@ -31,7 +31,7 @@ namespace game {
         
         
     public:
-        Game(int width, int height, std::string title );
+        explicit Game(int width, int height, std::string title );
         
     };
     

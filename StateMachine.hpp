@@ -18,7 +18,7 @@ namespace game {
         bool _isReplacing;
         
     public:
-        StateMachine() { }
+        explicit StateMachine() { }
         ~StateMachine() { }
         
         void addState(stateRef newState, bool isReplacing=true);

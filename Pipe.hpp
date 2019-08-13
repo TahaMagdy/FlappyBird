@@ -17,7 +17,7 @@ namespace game {
         int _pipeOffSetY;
         
     public:
-        Pipe(GameDataRef data);
+        explicit Pipe(GameDataRef data);
         
         void drawPipes();
         void spawningBottomPipe();
